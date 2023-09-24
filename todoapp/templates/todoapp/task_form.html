@@ -1,0 +1,17 @@
+{% extends 'todoapp/base.html' %}
+{% block content %}
+
+<div class = "header">
+    <!-- <h1>{{request.user}}のタスク</h1> -->
+    <a href="{% url 'tasks' %}">戻る</a>
+</div>
+<h2>tasukunotuika</h2>
+
+<form method="post">
+    {% csrf_token %}{{form.as_p}}
+    <input type="submit" value="追加">
+</form>
+
+
+
+{% endblock content %}

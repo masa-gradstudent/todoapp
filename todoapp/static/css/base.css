@@ -1,0 +1,114 @@
+
+body {
+    background-color: rgb(192, 230, 255);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding-top: 50px;
+}
+.todoAppWrapper {
+    max-width: 530px;
+    margin: 0 auto;
+    background-color: bisque;
+    box-shadow: 21px 21px 13px -5px #777777;
+    border-radius: 13px;
+}
+
+a {
+    color: #595959;
+    text-decoration: none;
+}
+h1 {
+    margin: 0;
+}
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 10px 10px 0 0;
+    color: blanchedalmond;
+}
+
+.taskWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    border-top: 1px splid rgba(0, 0, 0, 0.541);
+}
+
+.taskTitle {
+    display: flex;
+    align-items: center;
+}
+
+
+.taskCompletedIcon {
+    height: 20px;
+    width: 20px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.taskInCompletedIcon {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.loginAndLogout {
+    padding: 20px;
+}
+
+.loginAndLogout a {
+    color: red;
+}
+.editButton {
+    color: aqua;
+}
+/* タスク検索と追加のフォーム */
+.searchWrapper {
+display: flex;
+justify-content: space-between;
+padding: 10px;
+align-items: center;
+}
+
+.searchInput {
+    height: 24px;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 2px 4px ;
+    width: 160px !important;
+}
+
+.searchButton {
+    border: 1px solid red;
+    background-color: aqua;
+    color: aquamarine;
+    padding: 4px 10px ;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.4s;
+}
+
+.searchButton:hover {
+    background-color: rgb(19, 70, 70);
+    color: rgb(134, 44, 127);
+}
+.addButton{
+    font-size: 32px;
+    color: rgb(248, 141, 0);
+}
+
+/* タスクの追加欄のスタイリング */
+label {
+    display: block;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+}
